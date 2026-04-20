@@ -3491,5 +3491,130 @@ a.toggle:before {
     #header {
         border-bottom: 1px solid rgba(255,255,255,0.25) !important;
     }
+}
+/* =======================================================
+   FIX MÓVIL DEFINITIVO - HEADER / BANNER
+   ======================================================= */
+@media screen and (max-width: 768px) {
 
+    /* evita desbordes laterales */
+    html, body {
+        overflow-x: hidden !important;
+    }
+
+    /* reset general de contenedores */
+    #wrapper,
+    #main,
+    #main > .inner {
+        margin: 0 !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        max-width: 100% !important;
+    }
+
+    /* HEADER: quitar hacks de desktop */
+    #header {
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 1em 1em 1em 5.3em !important; /* deja sitio para la hamburguesa */
+        box-sizing: border-box !important;
+
+        /* solo fondo normal, sin degradados/líneas de desktop */
+        background-image: url("../../images/fondo-timetrica.jpg") !important;
+        background-size: cover !important;
+        background-position: center !important;
+        background-repeat: no-repeat !important;
+        background-attachment: scroll !important;
+
+        border-bottom: 1px solid rgba(255,255,255,0.18) !important;
+    }
+
+    /* apaga añadidos de desktop */
+    #header::before,
+    #header::after,
+    #banner::before,
+    #banner::after {
+        display: none !important;
+        content: none !important;
+    }
+
+    /* estructura interna simple */
+    #header .inner {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: flex-start !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        gap: 0.75em !important;
+    }
+
+    /* logo alineado */
+    #header .logo {
+        position: static !important;
+        left: auto !important;
+        transform: none !important;
+        margin: 0 !important;
+        font-size: 0.9em !important;
+        line-height: 1.1 !important;
+        letter-spacing: 0.5px !important;
+        white-space: nowrap !important;
+    }
+
+    /* ocultar redes en móvil */
+    #header nav,
+    #header .icons,
+    #header ul.icons {
+        display: none !important;
+    }
+
+    /* BANNER: quitar desplazamientos de desktop */
+    #banner {
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 2.2em 1.25em 2.8em 1.25em !important;
+        box-sizing: border-box !important;
+
+        background-image: url("../../images/fondo-timetrica.jpg") !important;
+        background-size: cover !important;
+        background-position: center !important;
+        background-repeat: no-repeat !important;
+        background-attachment: scroll !important;
+    }
+
+    #banner .inner {
+        width: 100% !important;
+        max-width: 100% !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    #banner .content {
+        position: static !important;
+        left: auto !important;
+        transform: none !important;
+        max-width: 100% !important;
+        width: 100% !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    #banner h1 {
+        font-size: 2.1em !important;
+        line-height: 1.08 !important;
+        margin-bottom: 0.5em !important;
+    }
+
+    #banner p {
+        font-size: 1em !important;
+        line-height: 1.7 !important;
+    }
+
+    /* botón */
+    #banner .button {
+        display: inline-block !important;
+        width: auto !important;
+        max-width: 100% !important;
+    }
 }
