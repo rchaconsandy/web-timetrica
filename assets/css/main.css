@@ -3395,3 +3395,86 @@ a.toggle:before {
 #menu a:hover {
     color: #ffcc00 !important; /* tu dorado corporativo */
 }
+/* =======================================================
+   AJUSTE MÓVIL HEADER + REDES
+   ======================================================= */
+@media screen and (max-width: 768px) {
+
+    /* Header normal, sin desplazamientos raros */
+    #header {
+        width: 100% !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        padding: 1.2em 1.2em !important;
+        padding-left: 5.5em !important; /* deja espacio para la hamburguesa */
+        padding-right: 1.2em !important;
+        background-position: center !important;
+    }
+
+    /* quitar empujes de escritorio */
+    #header .logo,
+    #header nav,
+    #banner .content,
+    #header .icons,
+    #header ul.icons,
+    #header .inner > .icons,
+    #header .inner > ul.icons {
+        left: 0 !important;
+        transform: none !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    /* contenido interno del header en columna */
+    #header .inner {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        gap: 0.75em !important;
+    }
+
+    /* logo más proporcionado en móvil */
+    #header .logo {
+        font-size: 0.9em !important;
+        letter-spacing: 1px !important;
+        line-height: 1.1 !important;
+    }
+
+    /* redes debajo del logo y en línea */
+    #header nav {
+        position: static !important;
+        width: auto !important;
+    }
+
+    #header .icons,
+    #header ul.icons {
+        display: flex !important;
+        flex-direction: row !important;
+        gap: 0.9em !important;
+        align-items: center !important;
+    }
+
+    /* línea del header bien alineada en móvil */
+    #header::after {
+        background-size: 100% 2px, cover !important;
+        background-position: left bottom, center !important;
+    }
+
+    /* banner: texto ocupa mejor el ancho */
+    #banner {
+        width: 100% !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        padding: 2.5em 1.2em 3em 1.2em !important;
+    }
+
+    #banner .content {
+        max-width: 100% !important;
+        padding-left: 0 !important;
+    }
+
+    #banner h1 {
+        font-size: 2.3em !important;
+        line-height: 1.1 !important;
+    }
+}
