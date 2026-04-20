@@ -3618,59 +3618,98 @@ a.toggle:before {
         max-width: 100% !important;
     }
 }
+/* =======================================================
+   MÓVIL - CENTRAR Y AGRANDAR LOGO + CENTRAR SERVICIOS
+   ======================================================= */
 @media screen and (max-width: 768px) {
 
-    /* contenedor del header centrado */
+    /* ---------- HEADER ---------- */
+
+    #header {
+        padding: 1em 1em 1em 5.3em !important;
+    }
+
     #header .inner {
         display: flex !important;
         justify-content: center !important;
         align-items: center !important;
-        gap: 0.8em !important;
+        width: 100% !important;
     }
 
-    /* logo + texto centrados */
+    /* bloque logo completo */
     #header .logo {
-        display: flex !important;
+        display: inline-flex !important;
         align-items: center !important;
         justify-content: center !important;
-        gap: 0.6em !important;
+        gap: 0.7em !important;
+        margin: 0 auto !important;
+        width: auto !important;
 
-        font-size: 1.2em !important;   /* antes era pequeño */
-        font-weight: 500 !important;
+        font-size: 1.35em !important;   /* agranda el texto */
+        font-weight: 600 !important;
+        line-height: 1 !important;
+        letter-spacing: 0.5px !important;
         text-align: center !important;
+        white-space: nowrap !important;
     }
 
-}
-@media screen and (max-width: 768px) {
-
-    /* título centrado */
-    #main .major h2 {
-        text-align: center !important;
+    /* si el logo lleva imagen */
+    #header .logo img {
+        width: 52px !important;
+        height: auto !important;
+        margin: 0 !important;
     }
 
-    /* línea decorativa centrada */
-    #main .major h2::after {
-        margin-left: auto !important;
-        margin-right: auto !important;
+    /* si el texto del logo está dentro de span/strong */
+    #header .logo span,
+    #header .logo strong,
+    #header .logo .srl {
+        font-size: 1em !important;
+        line-height: 1 !important;
     }
 
-    /* contenedor de servicios */
+    /* ---------- ÁREAS DE SERVICIO ---------- */
+
     .features {
         text-align: center !important;
     }
 
-    /* cada servicio */
     .features article {
-        display: flex !important;
-        flex-direction: column !important;
-        align-items: center !important;
+        display: block !important;
+        padding-left: 0 !important;
+        margin-left: 0 !important;
         text-align: center !important;
     }
 
-    /* icono centrado */
+    /* quitar posicionamiento lateral típico del template */
     .features article .icon {
+        position: static !important;
+        left: auto !important;
+        top: auto !important;
         margin: 0 auto 1em auto !important;
+        display: block !important;
     }
 
+    .features article .content {
+        width: 100% !important;
+        margin: 0 auto !important;
+        text-align: center !important;
+    }
+
+    .features article h3,
+    .features article p {
+        text-align: center !important;
+    }
+
+    /* título de la sección */
+    #main .major h2 {
+        text-align: center !important;
+        width: 100% !important;
+    }
+
+    #main .major h2:after {
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
 }
 
