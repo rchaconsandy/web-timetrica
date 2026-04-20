@@ -3748,29 +3748,23 @@ a.toggle:before {
     }
 }
 /* =======================================================
-   MÓVIL - MARGEN REAL PARA POSTS
+   MÓVIL - MARGEN SOLO PARA POSTS (SIN AFECTAR HEADER/BANNER)
    ======================================================= */
 @media screen and (max-width: 768px) {
 
-    /* espacio lateral para todo el bloque de posts */
-    .posts article > *:not(.image) {
+    /* SOLO la sección de posts dentro de main */
+    #main .posts article > *:not(.image) {
         padding-left: 1rem !important;
         padding-right: 1rem !important;
         box-sizing: border-box !important;
     }
 
-    /* si la imagen también la quieres con aire lateral */
-    .posts article .image {
+    /* opcional: margen en imágenes de posts */
+    #main .posts article .image {
         margin-left: 1rem !important;
         margin-right: 1rem !important;
         width: auto !important;
     }
 
-    /* títulos y párrafos sin pegado */
-    .posts article h3,
-    .posts article p {
-        margin-left: 0 !important;
-        margin-right: 0 !important;
-    }
 }
 
