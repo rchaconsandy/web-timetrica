@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ventas | Timétrica SRL</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: #ffffff;
+    color: #1f2937;
+}
+
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),
+                url("images/fondo-timetrica.jpg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 80px 40px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    max-width: 760px;
+    font-size: 18px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 60px 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 40px;
+}
+
+.card {
+    background: #f8fafc;
+    padding: 30px;
+    border-radius: 15px;
+    border: 1px solid #e5e7eb;
+}
+
+.card h2,
+.card h3 {
+    color: #0b1633;
+}
+
+.sidebar-card {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    border: 1px solid #e5e7eb;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 20px;
+    color: #ffcc00;
+    border: 2px solid #ffcc00;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.2s ease;
+}
+
+.button:hover {
+    background: #ffcc00;
+    color: black;
+}
+
+.back {
+    margin-bottom: 20px;
+}
+
+.back a {
+    color: #ffcc00;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.highlight {
+    margin-top: 20px;
+    padding: 18px 20px;
+    background: #fff8db;
+    border-left: 4px solid #ffcc00;
+    border-radius: 8px;
+    color: #3f3f46;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+@media (max-width: 900px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero {
+        padding: 60px 20px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<section class="hero">
+
+    <div class="back">
+        <a href="index.html">← Volver al inicio</a>
+    </div>
+
+    <h1>Ventas</h1>
+
+    <p>
+        Comercializamos equipos, insumos y soluciones tecnológicas para empresas que requieren
+        productos confiables, asesoramiento técnico y una oferta alineada a sus necesidades operativas.
+    </p>
+
+</section>
+
+<div class="container">
+    <div class="grid">
+
+        <div class="card">
+            <h2>Equipamiento tecnológico con respaldo técnico</h2>
+
+            <p>
+                En Timétrica S.R.L. ofrecemos importación y venta de equipos e insumos tecnológicos
+                orientados a cubrir requerimientos corporativos, industriales y operativos, con un enfoque
+                que combina disponibilidad de producto, asesoramiento especializado y criterios de selección técnica.
+            </p>
+
+            <p>
+                Nuestro servicio de ventas no se limita a la provisión de equipos. Acompañamos al cliente en la
+                identificación de la solución más adecuada para su necesidad, priorizando compatibilidad,
+                confiabilidad, escalabilidad y rendimiento en operación.
+            </p>
+
+            <p>
+                Gracias a nuestra experiencia en telecomunicaciones, infraestructura y tecnología aplicada,
+                podemos recomendar productos alineados a proyectos reales, evitando decisiones basadas únicamente
+                en precio y enfocándonos en valor, continuidad y desempeño.
+            </p>
+
+            <div class="highlight">
+                Proveemos tecnología con criterio técnico, para que cada inversión responda realmente a la necesidad del cliente.
+            </div>
+
+            <h3>Productos y soluciones</h3>
+
+            <ul>
+                <li>Radios, handies y equipos VHF</li>
+                <li>Switches, routers, access points y firewalls</li>
+                <li>Teléfonos IP y soluciones de conectividad</li>
+                <li>Monitores, computadoras de escritorio y portátiles</li>
+                <li>Impresoras y consumibles</li>
+                <li>UPS, PDUs y gabinetes</li>
+                <li>Cámaras CCTV y sistemas de alarma</li>
+                <li>Drones de propósito específico</li>
+                <li>Equipamiento vinculado a movilidad eléctrica</li>
+            </ul>
+
+            <a href="mailto:info@timetrica.com.bo?subject=Consulta sobre Ventas" class="button">
+                Solicitar información
+            </a>
+        </div>
+
+        <div>
+
+            <div class="sidebar-card">
+                <h3>Nuestro enfoque</h3>
+                <p>
+                    Ayudamos a nuestros clientes a seleccionar equipos y soluciones con una visión práctica,
+                    técnica y orientada al rendimiento real de cada implementación.
+                </p>
+            </div>
+
+            <div class="sidebar-card" style="margin-top:20px;">
+                <h3>Valor para el cliente</h3>
+                <ul>
+                    <li>Asesoramiento técnico especializado</li>
+                    <li>Productos alineados al proyecto y operación</li>
+                    <li>Mayor confiabilidad en la inversión</li>
+                    <li>Soluciones integrables con otros servicios de Timétrica</li>
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+</body>
+<footer id="footer" style="text-align: center; padding: 2em 0; border-top: 1px solid #ddd; margin-top: 2em;">
+  <ul style="list-style: none; padding: 0; margin: 0;">
+    <li>© 2026 - Timétrica SRL</li>
+    <li>Bolivia</li>
+  </ul>
+</footer>
+</html>
