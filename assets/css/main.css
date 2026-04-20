@@ -3712,4 +3712,16 @@ a.toggle:before {
         margin-right: auto !important;
     }
 }
+/* =======================================================
+   MÓVIL - ALINEAR ROMBO CON EL ICONO EN SERVICIOS
+   ======================================================= */
+@media screen and (max-width: 768px) {
+
+    .features article .icon:before {
+        left: 50% !important;
+        transform: translateX(-50%) rotate(45deg) !important;
+        margin-left: 0 !important;
+    }
+
+}
 
