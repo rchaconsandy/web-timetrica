@@ -3477,4 +3477,19 @@ a.toggle:before {
         font-size: 2.3em !important;
         line-height: 1.1 !important;
     }
+}/* =======================================================
+   FIX LÍNEA HEADER EN MÓVIL
+   ======================================================= */
+@media screen and (max-width: 768px) {
+
+    /* eliminamos la línea problemática */
+    #header::after {
+        display: none !important;
+    }
+
+    /* opcional: agregamos una línea correcta debajo */
+    #header {
+        border-bottom: 1px solid rgba(255,255,255,0.25) !important;
+    }
+
 }
