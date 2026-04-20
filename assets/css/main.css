@@ -3976,42 +3976,14 @@ a.toggle:before {
     }
 }
 /* =======================================================
-   MÓVIL - UNIFICAR FONDO DE HEADER + BANNER
+   MÓVIL - HEADER NEGRO
    ======================================================= */
 @media screen and (max-width: 768px) {
 
-    /* un solo fondo común */
-    #main > .inner {
-        background: url("../../images/fondo-timetrica.jpg") center top / cover no-repeat !important;
-    }
-
-    /* header y banner totalmente transparentes */
-    #header,
-    #banner,
-    #header .inner,
-    #banner .inner,
-    #banner .content {
-        background: transparent !important;
+    #header {
+        background: #000000 !important;
         background-image: none !important;
-        box-shadow: none !important;
-        clip-path: none !important;
+        border-bottom: 1px solid rgba(255,255,255,0.15) !important;
     }
 
-    /* quitar cualquier parche lateral viejo */
-    #header::before,
-    #header::after,
-    #banner::before,
-    #banner::after {
-        display: none !important;
-        content: none !important;
-        background: none !important;
-    }
-
-    /* evitar que el header y banner se comporten como bloques separados con offset */
-    #header,
-    #banner {
-        width: 100% !important;
-        margin: 0 !important;
-    }
 }
-
