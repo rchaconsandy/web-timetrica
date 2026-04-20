@@ -3748,48 +3748,29 @@ a.toggle:before {
     }
 }
 /* =======================================================
-   MÓVIL - ESPACIADO REAL EN POSTS Y CONTENIDO
+   MÓVIL - MARGEN REAL PARA POSTS
    ======================================================= */
 @media screen and (max-width: 768px) {
 
-    /* contenedor principal real */
-    #main {
-        padding-left: 1.2em !important;
-        padding-right: 1.2em !important;
+    /* espacio lateral para todo el bloque de posts */
+    .posts article > *:not(.image) {
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+        box-sizing: border-box !important;
     }
 
-    /* inner (por si acaso) */
-    #main > .inner {
-        padding-left: 0 !important;
-        padding-right: 0 !important;
+    /* si la imagen también la quieres con aire lateral */
+    .posts article .image {
+        margin-left: 1rem !important;
+        margin-right: 1rem !important;
+        width: auto !important;
     }
 
-    /* posts completos */
-    .posts {
+    /* títulos y párrafos sin pegado */
+    .posts article h3,
+    .posts article p {
         margin-left: 0 !important;
         margin-right: 0 !important;
     }
-
-    /* cada artículo */
-    .posts article {
-        margin-left: 0 !important;
-        margin-right: 0 !important;
-        padding-left: 0 !important;
-        padding-right: 0 !important;
-    }
-
-    /* texto dentro del post */
-    .posts article p,
-    .posts article h3 {
-        padding-left: 0.5em !important;
-        padding-right: 0.5em !important;
-    }
-
-    /* títulos grandes tipo “Experiencia…” */
-    #main h2 {
-        padding-left: 0.5em !important;
-        padding-right: 0.5em !important;
-    }
-
 }
 
