@@ -3618,3 +3618,59 @@ a.toggle:before {
         max-width: 100% !important;
     }
 }
+@media screen and (max-width: 768px) {
+
+    /* contenedor del header centrado */
+    #header .inner {
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        gap: 0.8em !important;
+    }
+
+    /* logo + texto centrados */
+    #header .logo {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        gap: 0.6em !important;
+
+        font-size: 1.2em !important;   /* antes era pequeño */
+        font-weight: 500 !important;
+        text-align: center !important;
+    }
+
+}
+@media screen and (max-width: 768px) {
+
+    /* título centrado */
+    #main .major h2 {
+        text-align: center !important;
+    }
+
+    /* línea decorativa centrada */
+    #main .major h2::after {
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    /* contenedor de servicios */
+    .features {
+        text-align: center !important;
+    }
+
+    /* cada servicio */
+    .features article {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        text-align: center !important;
+    }
+
+    /* icono centrado */
+    .features article .icon {
+        margin: 0 auto 1em auto !important;
+    }
+
+}
+
