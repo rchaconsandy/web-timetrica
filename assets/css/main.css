@@ -3747,4 +3747,35 @@ a.toggle:before {
         transform: rotate(45deg) !important;
     }
 }
+/* =======================================================
+   MÓVIL - ESPACIADO LATERAL CONTENIDO
+   ======================================================= */
+@media screen and (max-width: 768px) {
+
+    /* contenido principal */
+    #main > .inner {
+        padding-left: 1.5em !important;
+        padding-right: 1.5em !important;
+    }
+
+    /* servicios */
+    .features article .content {
+        padding-left: 0.5em !important;
+        padding-right: 0.5em !important;
+    }
+
+    /* posts (bloques con imagen + texto) */
+    .posts article {
+        padding-left: 0.5em !important;
+        padding-right: 0.5em !important;
+    }
+
+    /* textos dentro de posts */
+    .posts article .content {
+        padding-left: 0.5em !important;
+        padding-right: 0.5em !important;
+    }
+
+}
+
 
