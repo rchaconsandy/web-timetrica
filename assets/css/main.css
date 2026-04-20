@@ -3748,34 +3748,48 @@ a.toggle:before {
     }
 }
 /* =======================================================
-   MÓVIL - ESPACIADO LATERAL CONTENIDO
+   MÓVIL - ESPACIADO REAL EN POSTS Y CONTENIDO
    ======================================================= */
 @media screen and (max-width: 768px) {
 
-    /* contenido principal */
+    /* contenedor principal real */
+    #main {
+        padding-left: 1.2em !important;
+        padding-right: 1.2em !important;
+    }
+
+    /* inner (por si acaso) */
     #main > .inner {
-        padding-left: 1.5em !important;
-        padding-right: 1.5em !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
     }
 
-    /* servicios */
-    .features article .content {
-        padding-left: 0.5em !important;
-        padding-right: 0.5em !important;
+    /* posts completos */
+    .posts {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
     }
 
-    /* posts (bloques con imagen + texto) */
+    /* cada artículo */
     .posts article {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    /* texto dentro del post */
+    .posts article p,
+    .posts article h3 {
         padding-left: 0.5em !important;
         padding-right: 0.5em !important;
     }
 
-    /* textos dentro de posts */
-    .posts article .content {
+    /* títulos grandes tipo “Experiencia…” */
+    #main h2 {
         padding-left: 0.5em !important;
         padding-right: 0.5em !important;
     }
 
 }
-
 
